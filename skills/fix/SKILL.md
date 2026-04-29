@@ -1,4 +1,17 @@
-# Mode: Fix
+---
+name: fix
+description: >
+  Use this skill when fixing a bug, addressing broken behavior, or
+  investigating why something doesn't work as expected. Walks through
+  reproducing the failure, diagnosing the root cause, planning the smallest
+  correct change, applying it in the codebase's existing style, and pinning
+  it with a regression test. Trigger this skill when the user reports an
+  error, a regression, incorrect output, a flaky test, or asks to "fix,"
+  "debug," "make this work," or "figure out why X is happening" — even if
+  they don't name a specific bug or use the word "fix."
+---
+
+# Fix
 
 Smallest correct change to broken behavior.
 

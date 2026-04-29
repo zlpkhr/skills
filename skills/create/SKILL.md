@@ -1,4 +1,19 @@
-# Mode: Create
+---
+name: create
+description: >
+  Use this skill when starting a new module, file, service, component, or
+  library from scratch — greenfield code where the shape isn't already
+  decided. Walks through identifying the domain vocabulary, designing the
+  public API from the consumer's perspective, choosing the structure (pure
+  core vs effectful edges, state machines for stateful processes,
+  polymorphism over flag-forks, no dependency cycles, closed-by-default),
+  implementing the simplest version that satisfies the API, and deferring
+  irreversible decisions to the last responsible moment. Trigger when the
+  user says "build a new," "let's start a," "I want a fresh," "from
+  scratch," or describes a piece of software that doesn't yet exist.
+---
+
+# Create
 
 Greenfield: a new module, file, service, or component. You're choosing the shape.
 

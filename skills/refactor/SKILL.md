@@ -1,4 +1,17 @@
-# Mode: Refactor
+---
+name: refactor
+description: >
+  Use this skill when deliberately reshaping working code to improve its
+  quality without changing observable behavior. Walks through confirming
+  scope, deciding what's worth changing (coupling and repeated patterns,
+  not isolated cosmetic ugliness), ensuring tests cover existing behavior,
+  making incremental changes one shape change at a time, and verifying
+  behavior didn't drift. Trigger when the user says "refactor," "clean up,"
+  "improve this code," "make this better," "extract," "consolidate," or
+  asks for structural changes to working code.
+---
+
+# Refactor
 
 Deliberately reshape working code. The user explicitly asked for a quality change.
 
@@ -14,4 +27,4 @@ Deliberately reshape working code. The user explicitly asked for a quality chang
 
 5. **Don't change behavior.** If a test breaks but the externally-observable behavior didn't change, the test was wrong — it was peeking at internals or over-mocking. Such tests are evidence to delete or rewrite, not to undo the refactor.
 
-Design rules from `create.md` are available where the refactor naturally lands — but only there. Don't introduce FSMs, layers, or polymorphism in code the refactor wasn't supposed to touch.
+Some refactors introduce new structure where there wasn't any. In those parts, the design discipline from greenfield work applies — but only there. Don't introduce FSMs, layers, or polymorphism in code the refactor wasn't supposed to touch.

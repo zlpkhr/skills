@@ -1,6 +1,21 @@
-# Writing rules
+---
+name: code-style
+description: >
+  Use this skill whenever writing, modifying, or reviewing code. Provides
+  opinionated style and structure rules — names that stay truthful as code
+  evolves, compound boolean conditions extracted into named predicates, one
+  level of abstraction per function, guard clauses to eliminate states
+  early, no deeply nested expressions, explicit else branches, no encoding
+  meaning in truthiness, collections never null, command-query separation,
+  and more. Trigger this skill alongside any task that involves producing
+  or editing code, including bug fixes, feature additions, refactors, and
+  greenfield work — even if the user only describes the goal and not the
+  code itself.
+---
 
-Local rules that fire whenever you write or modify a line of code. They apply to the code *you are writing* — they don't reach out to reshape surrounding code, so they don't conflict with the defaults.
+# Code Style
+
+Local rules that fire whenever you write or modify a line of code. They apply to the code *you are writing*, not to surrounding code.
 
 ## Naming
 
